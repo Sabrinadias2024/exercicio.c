@@ -1,21 +1,35 @@
+#include <stdio.h>
+
 int main()
+{
+    printf("Hello World");
 
- {
+    return 0;
+}
 
- char letra;
- printf("Digite uma letra: ");
- scanf("%d", &letra);
+  import java.util.Scanner;
 
- switch (letra) {
- case 'a':
- case 'e':
- case 'i':
- case 'o':
- case 'u':
- printf("Vogal\n");
- break;
- default:
- printf("Consoante\n");
- }
- return 0;
- }
+public class NotasDaProva {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        int nota = input.nextInt();
+
+        if (nota == 0) {
+            System.out.println('E');
+        } else if (nota >= 1 && nota <= 35) {
+            System.out.println('D');
+        } else if (nota >= 36 && nota <= 60) {
+            System.out.println('C');
+        } else if (nota >= 61 && nota <= 85) {
+            System.out.println('B');
+        } else if (nota >= 86 && nota <= 100) {
+            System.out.println('A');
+        }
+    
+        input.close();
+    }
+}
+
